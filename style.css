@@ -1,0 +1,502 @@
+body {
+    margin: 0;
+    background-color: #f9d03c;
+  }
+  
+  header {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url("img/banner-wave.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    position: relative;
+    padding-bottom: 50px;
+  }
+  
+  header::before {
+    content: "";
+    background-image: url("img/banner-flag.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .header_banner {
+    margin-top: 50px;
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .banner_picture {
+    width: 65%;
+    position: relative;
+    margin-right: auto;
+  }
+
+  .banner_img {
+    width: 100%;
+  }
+
+  .logo_picture {
+    width: 100%;
+  }
+
+  .logo_img {
+    width: 100%;
+  }
+
+
+  .header_contact {
+    width: 30%;
+    position: absolute;
+    top: 10vh;
+    right: 10vh;
+    text-align: center;
+  }
+  
+  h1 {
+    width: 100%;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    font-size: 10vh;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #f9d03c;
+  }
+
+  header span {
+    font-size: 5vh;
+  }
+  
+  header span {
+    width: 100%;
+    text-align: center;
+  }
+  
+  h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 10vh;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+  }
+  
+  .advantage_card {
+    display: block;
+    width: 400px;
+    width: 30%;
+    margin-top: 30px;
+    font-size: 3vh;
+    text-align: center;
+    color: #00b4ce;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+  }
+  
+  .adv_img_wrapper {
+    width: 100%;
+  }
+
+  .advantage_picture {
+    width: 100%;
+  }
+
+  .advantage_img {
+    width: 100%;
+  }
+
+  .advantage_content {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .instructions {
+    background-color: #00b4ce;
+  }
+  
+  .instructions_card_wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 3vh;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  .instructions_card {
+    width: 22%;
+  }
+
+  
+  .instructions_card_img_wrapper {
+    width: 100%;
+  }
+  
+  .instructions_card_picture {
+    width: 100%;
+  }
+
+  .instructions_card_img {
+    width: 100%;
+  }
+
+  .price_card_wrapper {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .price_card {
+    width: 20%;
+  }
+
+  .price_card_picture {
+    width: 100%;
+  }
+
+  .price_card_img {
+    width: 100%;
+  }
+
+  .order_button_phone {
+    background-color: #f9d03c;
+    border: 5px solid #fff;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: flex;
+    border-radius: 40px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-size: 5vh;
+    line-height: 9px;
+    min-height: 50px;
+  }
+
+  .examples_page {
+    background-color: #00b4ce;
+    position: relative;
+  }
+
+  .contact_page_wrapper {
+    display: flex;
+  }
+
+  .footer_img {
+    width: 100%;
+    margin-left: auto;
+  }
+
+  .footer_picture {
+    width: 100%;
+    margin-left: auto;
+  }
+  
+  .footer_img_wrapper {
+    width: 50%;
+    position: relative;
+    margin-left: auto;
+  }
+
+  .footer_contact_wrapper {
+    position: absolute;
+  }
+
+  /* .slider__arrows {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .slider__arrow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100px;
+    background: rgba(0, 67, 252, 0.466);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    cursor: pointer;
+  }
+  
+  .slider__arrow:hover {
+    background: #ffe60010;;
+  }
+  
+  .slider__arrow_next {
+    right: 0;
+  }
+  
+  .slider__dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .slider__dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #000;
+    margin-right: 5px;
+    cursor: pointer
+  }
+  
+  .slider__dot_active {
+    background: #fff;
+  }
+  
+  .slider__dot:hover {
+    background: #fff;
+  }
+
+  .slider {
+    position: relative;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .slider__items {
+    width: 100%;
+  }
+  
+  .slider__item {
+    display: none;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .examples_img {
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .slider__item_active {
+    display: block;
+  } */
+  
+  .slider {
+    width: 100%;
+  }
+
+  .slider__navigation {
+    display: none;
+  }
+
+  .slider__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .slider__item {
+    width: 25%;
+    margin: 50px;
+  }
+
+  .examples_picture {
+    width: 100%;
+  }
+
+  .examples_img {
+    width: 100%;
+    box-shadow: 20px 10px 10px rgb(0, 0, 0);
+  }
+
+  @media (min-width:641px) and (max-width: 960px) {
+
+  
+  }
+  
+  @media (min-width:961px) and (max-width: 1280px) {
+    .slider__arrows {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+    
+    .slider__arrow {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100px;
+      background: rgba(0, 67, 252, 0.466);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 40px;
+      cursor: pointer;
+    }
+    
+    .slider__arrow:hover {
+      background: #ffe60010;;
+    }
+    
+    .slider__arrow_next {
+      right: 0;
+    }
+    
+    .slider__dots {
+      position: absolute;
+      bottom: 20px;
+      left: 50px;
+      right: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .slider__dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #000;
+      margin-right: 5px;
+      cursor: pointer
+    }
+    
+    .slider__dot_active {
+      background: #fff;
+    }
+    
+    .slider__dot:hover {
+      background: #fff;
+    }
+  
+    .slider {
+      position: relative;
+      width: 30%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .slider__items {
+      width: 100%;
+    }
+    
+    .slider__item {
+      display: none;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .examples_img {
+      width: 100%;
+      object-fit: cover;
+    }
+    
+    .slider__item_active {
+      display: block;
+    }
+  }
+
+  @media (min-width:1024px) and (max-width: 1400px) {
+    header {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      background-image: url("img/banner-wave.png");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      position: relative;
+      padding-bottom: 50px;
+    }
+    
+    header::before {
+      content: "";
+      background-image: url("img/banner-flag.png");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center top;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  
+    .header_banner {
+      margin-top: 50px;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .banner_picture {
+      width: 70%;
+      position: relative;
+      margin-right: auto;
+    }
+  
+    .banner_img {
+      width: 100%;
+    }
+  
+    .logo_picture {
+      width: 100%;
+    }
+  
+    .logo_img {
+      width: 100%;
+    }
+  
+  
+    .header_contact {
+      width: 30%;
+      position: absolute;
+      top: 10vh;
+      right: 10vh;
+      text-align: center;
+    }
+    
+    h1 {
+      width: 100%;
+      text-align: center;
+      text-shadow: 1px 1px 2px rgb(0, 0, 0);
+      font-size: 10vh;
+      text-transform: uppercase;
+      margin-top: 0;
+      margin-bottom: 10px;
+      color: #f9d03c;
+    }
+  
+    header span {
+      font-size: 5vh;
+    }
+    
+    header span {
+      width: 100%;
+      text-align: center;
+    }
+  }
