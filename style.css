@@ -103,7 +103,6 @@ body {
   
   .advantage_card {
     display: block;
-    width: 400px;
     width: 22%;
     margin: 30px;
     font-size: 3vh;
@@ -203,6 +202,10 @@ body {
     padding-bottom: 1vh;
   }
 
+  .price__navigation {
+    display: none;
+  }
+
   .order_button_phone {
     margin-top: 40px;
     background-color: #f9d03c;
@@ -220,6 +223,14 @@ body {
     min-height: 100px;
     font-style: oblique;    ;
     color: black;
+  }
+
+  .price__arrows {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
   }
 
 /********************/
@@ -255,7 +266,57 @@ body {
       border-top-left-radius: 100% 20px;
       border-bottom-right-radius: 100% 30px;
   } */
-
+  .slider__arrows {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .slider__arrow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 4vh;
+    color: #f9d03c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    cursor: pointer;
+  }
+  
+  .slider__arrow_next {
+    right: 0;
+  }
+  
+  .slider__dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .slider__dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #000;
+    margin-right: 5px;
+    cursor: pointer
+  }
+  
+  .slider__dot_active {
+    background: #fff;
+  }
+  
+  .slider__dot:hover {
+    background: #fff;
+  }
   .examples_picture {
     width: 100%;
   }
@@ -474,12 +535,7 @@ body {
     }
   
     header span {
-      font-size: 5vh;
-    }
-    
-    header span {
-      width: 100%;
-      text-align: center;
+      font-size: 4vh;
     }
 
   /********************/
@@ -567,12 +623,163 @@ body {
 
 }
 
-@media (min-width:961px) and (max-width: 1024px) {
 
-}
+@media (min-width:641px) and (max-width: 1023px) {
+  /********************/
+  /* Первая страница */
+  /********************/
+  .header_banner {
+    margin-top: 30px;
+    width: 100%;
+  }
+
+  .banner_picture {
+    width: 80%;
+  }
+
+  .header_contact {
+    width: 30%;
+    top: 10vh;
+    right: 5vh;
+  }
+  
+  h1 {
+    font-size: 6vh;
+  }
+
+  header span {
+    font-size: 3.5vh;
+  }
+  
+  /********************/
+  /* Вторая страница */
+  /********************/
+
+  h2 {
+    font-size: 6vh;
+  }
+  
+  .advantage_card {
+    width: 50%;
+    font-size: 3vh;
+    margin: 0;
+    margin-top: 30px;
+  }
+
+  .advantage_content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 30px;
+  }
 
 
-@media (min-width:641px) and (max-width: 960px) {
+  /********************/
+  /* Третья страница */
+  /********************/
+
+  .instructions {
+    padding-bottom: 30px;
+  }
+  
+  .instructions_card_wrapper {
+    flex-wrap: wrap;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 3vh;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  .instructions_card {
+    width: 45%;
+  }
+
+  /********************/
+  /* Четвертая страница */
+  /********************/
+
+  .price_card_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+    margin-top: 30px;
+    position: relative;
+    justify-content: center;
+  }
+
+  .price_card {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: none;
+  }
+
+  .price_card_active {
+    display: flex;
+  }
+
+  .price_card_picture {
+    width: 100%;
+  }
+
+  .price_card_img {
+    width: 100%;
+  }
+
+  .price_card_img_wrapper {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.637);
+    text-align: center;
+    font-size: 5vh;
+  }
+
+  .price {
+    display: block;
+    padding-bottom: 1vh;
+  }
+
+  .order_button_phone {
+    margin-bottom: 40px;
+    font-size: 5vh;
+    line-height: 9px;
+    min-height: 100px;
+    font-style: oblique;
+    color: black;
+    width: 50%;
+  }
+  
+  .price__arrow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 10vh;
+    color: #00b4ce;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    cursor: pointer;
+  }
+  
+  .price__arrow_next {
+    right: 0;
+  }
+
+  .price__navigation {
+    display: block;
+  }
+
+
+
+  /********************/
+  /* Пятая страница */
+  /********************/
+
   .slider__arrows {
     position: absolute;
     top: 0;
@@ -583,20 +790,15 @@ body {
   
   .slider__arrow {
     position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100px;
-    background: rgba(0, 67, 252, 0.466);
-    color: #fff;
+    top: 50px;
+    bottom: 55px;
+    width: 4vh;
+    color: #f9d03c;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 40px;
     cursor: pointer;
-  }
-  
-  .slider__arrow:hover {
-    background: #ffe60010;;
   }
   
   .slider__arrow_next {
@@ -632,7 +834,7 @@ body {
 
   .slider {
     position: relative;
-    width: 30%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -655,6 +857,244 @@ body {
   .slider__item_active {
     display: block;
   }
+
+  .slider__navigation {
+    display: block;
+  }
+
+
+  /********************/
+  /* Шестая страница */
+  /********************/
+  
+  .socials_link {
+    width: 8vh;
+    height: 8vh;
+  }
+  
+  .footer_contact_wrapper {
+    font-size: 5vh;
+    margin-top: 30px;
+  }
+
   
 }
 
+@media (min-width:300px) and (max-width: 640px) {
+  /********************/
+  /* Первая страница */
+  /********************/
+  .header_banner {
+    margin-top: 30px;
+    width: 100%;
+  }
+
+  .banner_picture {
+    width: 80%;
+  }
+
+  .header_contact {
+    width: 30%;
+    top: 10vh;
+    right: 5vh;
+  }
+  
+  h1 {
+    font-size: 6vh;
+  }
+
+  header span {
+    font-size: 3.5vh;
+  }
+  
+  /********************/
+  /* Вторая страница */
+  /********************/
+
+  h2 {
+    font-size: 6vh;
+  }
+  
+  .advantage_card {
+    width: 50%;
+    font-size: 3vh;
+    margin: 0;
+    margin-top: 30px;
+  }
+
+  .advantage_content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 30px;
+  }
+
+
+  /********************/
+  /* Третья страница */
+  /********************/
+
+  .instructions {
+    padding-bottom: 30px;
+  }
+  
+  .instructions_card_wrapper {
+    flex-wrap: wrap;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 3vh;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  .instructions_card {
+    width: 45%;
+  }
+
+  /********************/
+  /* Четвертая страница */
+  /********************/
+
+  .price_card_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+    margin-top: 30px;
+    position: relative;
+    justify-content: center;
+  }
+
+  .price_card {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: none;
+  }
+
+  .price_card_active {
+    display: flex;
+  }
+
+  .price_card_picture {
+    width: 100%;
+  }
+
+  .price_card_img {
+    width: 100%;
+  }
+
+  .price_card_img_wrapper {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.637);
+    text-align: center;
+    font-size: 5vh;
+  }
+
+  .price {
+    display: block;
+    padding-bottom: 1vh;
+  }
+
+  .order_button_phone {
+    margin-bottom: 40px;
+    font-size: 5vh;
+    line-height: 9px;
+    min-height: 100px;
+    font-style: oblique;
+    color: black;
+    width: 50%;
+  }
+  
+  .price__arrow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 5vh;
+    color: #00b4ce;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    cursor: pointer;
+  }
+  
+  .price__arrow_next {
+    right: 0;
+  }
+
+  .price__navigation {
+    display: block;
+  }
+
+
+
+  /********************/
+  /* Пятая страница */
+  /********************/
+
+  .slider__arrow {
+    width: 6vh;
+  }
+
+  .slider {
+    position: relative;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .slider__items {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .slider__item {
+    display: none;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .examples_img {
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .slider__item_active {
+    display: block;
+  }
+
+  .slider__navigation {
+    display: block;
+  }
+
+
+  /********************/
+  /* Шестая страница */
+  /********************/
+  
+  .socials_link {
+    width: 4vh;
+    height: 4vh;
+  }
+  
+  .footer_contact_wrapper {
+    font-size: 3vh;
+    margin-top: 10px;
+  }
+
+  .footer_img_wrapper {
+    width: 60%;
+}
+
+  
+ 
+
+
+
+}

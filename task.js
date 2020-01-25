@@ -3,6 +3,7 @@ const rightArrow = Array.from(document.getElementsByClassName('slider__arrow_nex
 const sliderImages = document.querySelectorAll('.slider__item');
 const sliderDots = document.querySelectorAll('.slider__dot');
 
+
 let nowActiveImgNumber;
 nowActiveImg(sliderImages);
 let nowActiveDot = nowActiveImgNumber;
@@ -73,7 +74,46 @@ leftArrow.forEach( element =>
 });
 
 
+const priceLeftArrow = Array.from(document.getElementsByClassName('price__arrow_prev'));
+const priceRightArrow = Array.from(document.getElementsByClassName('price__arrow_next'));
+const priceCard = document.querySelectorAll('.price_card');
+console.log(priceCard);
 
+let nowActivePriceNumber;
+nowPriceActiveImg(priceCard);
+
+function nowPriceActiveImg(input) {
+    for (let i = 0; i < input.length; i++) {
+        if (input[i].className.includes('price_card_active')) {
+            nowActivePriceNumber = i;
+        }
+    }
+}
+
+priceRightArrow.forEach( element =>
+    element.onclick = () => {
+        nowActiveImg(priceCard);
+        priceCard[nowActivePriceNumber].classList.remove('price_card_active');
+        if (nowActivePriceNumber === (priceCard.length - 1)) {
+            nowActivePriceNumber = 0;
+        } else {
+            nowActivePriceNumber = nowActivePriceNumber + 1;
+        }
+        priceCard[nowActivePriceNumber].classList.add('price_card_active');
+});
+
+
+priceLeftArrow.forEach( element =>
+    element.onclick = () => {
+        nowActiveImg(priceCard);
+        priceCard[nowActivePriceNumber].classList.remove('price_card_active');
+        if (nowActivePriceNumber === 0) {
+            nowActivePriceNumber = priceCard.length - 1;
+        } else {
+            nowActivePriceNumber = nowActivePriceNumber - 1;
+        }
+        priceCard[nowActivePriceNumber].classList.add('price_card_active');
+});
 
 
 
