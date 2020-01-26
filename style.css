@@ -181,6 +181,9 @@ body {
 
   .price_card {
     width: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .price_card_picture {
@@ -896,15 +899,15 @@ body {
   .header_contact {
     width: 30%;
     top: 10vh;
-    right: 5vh;
+    right: 4vh;
   }
   
   h1 {
-    font-size: 6vh;
+    font-size: 5vh;
   }
 
   header span {
-    font-size: 3.5vh;
+    font-size: 3vh;
   }
   
   /********************/
@@ -912,7 +915,7 @@ body {
   /********************/
 
   h2 {
-    font-size: 6vh;
+    font-size: 4vh;
   }
   
   .advantage_card {
@@ -939,6 +942,7 @@ body {
 
   .instructions {
     padding-bottom: 30px;
+    padding-top: 10px;
   }
   
   .instructions_card_wrapper {
@@ -953,6 +957,7 @@ body {
   
   .instructions_card {
     width: 45%;
+    margin-top: 15px;
   }
 
   /********************/
@@ -962,7 +967,7 @@ body {
   .price_card_wrapper {
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 50px;
+    padding-bottom: 15px;
     margin-top: 30px;
     position: relative;
     justify-content: center;
@@ -970,9 +975,6 @@ body {
 
   .price_card {
     width: 80%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     display: none;
   }
 
@@ -1000,19 +1002,18 @@ body {
   }
 
   .order_button_phone {
-    margin-bottom: 40px;
-    font-size: 5vh;
-    line-height: 9px;
-    min-height: 100px;
+    font-size: 3.5vh;
+    min-height: 50px;
     font-style: oblique;
     color: black;
     width: 50%;
+    z-index: 50;
   }
   
   .price__arrow {
     position: absolute;
     top: 0;
-    bottom: 0;
+    bottom: 120px;
     width: 5vh;
     color: #00b4ce;
     display: flex;
