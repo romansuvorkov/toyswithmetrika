@@ -77,7 +77,6 @@ leftArrow.forEach( element =>
 const priceLeftArrow = Array.from(document.getElementsByClassName('price__arrow_prev'));
 const priceRightArrow = Array.from(document.getElementsByClassName('price__arrow_next'));
 const priceCard = document.querySelectorAll('.price_card');
-console.log(priceCard);
 
 let nowActivePriceNumber;
 nowPriceActiveImg(priceCard);
@@ -115,8 +114,15 @@ priceLeftArrow.forEach( element =>
         priceCard[nowActivePriceNumber].classList.add('price_card_active');
 });
 
+let talk = Array.from(document.getElementsByClassName('talk'));
 
+let talkpicture = talk[0];
 
+function reflection(input) {
+  input.classList.toggle('reflection');
+}
+
+let talkReflection = setInterval(reflection, 2000, talkpicture);
 
 
 
