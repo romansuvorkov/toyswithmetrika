@@ -19,8 +19,6 @@ body {
     background-position: center bottom;
     position: relative;
     padding-bottom: 50px;
-    padding-left: 10px;
-    padding-right: 10px;
   }
   
   header::before {
@@ -112,6 +110,11 @@ body {
     color: #00b4ce;
     text-shadow: 1px 1px 2px rgb(0, 0, 0);
   }
+
+  .advantage_card span {
+    display: block;
+    width: 95%;
+  }
   
   .adv_img_wrapper {
     width: 100%;
@@ -132,8 +135,8 @@ body {
     justify-content: space-around;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 10px;
-    padding-right: 10px;
+    /* padding-left: 10px;
+    padding-right: 10px; */
   }
 
 /********************/
@@ -143,8 +146,6 @@ body {
   .instructions {
     background-color: #00b4ce;
     padding-bottom: 30px;
-    padding-left: 10px;
-    padding-right: 10px;
   }
   
   .instructions_card_wrapper {
@@ -187,8 +188,6 @@ body {
     justify-content: space-around;
     padding-bottom: 50px;
     margin-top: 30px;
-    padding-left: 10px;
-    padding-right: 10px;
   }
 
   .price_card {
@@ -228,6 +227,25 @@ body {
     box-sizing: border-box;
     text-decoration: none;
     text-transform: uppercase;
+    display: none;
+    border-radius: 40px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-size: 5vh;
+    line-height: 9px;
+    min-height: 100px;
+    font-style: oblique;    ;
+    color: black;
+  }
+
+  .order_button_mail {
+    margin-top: 40px;
+    background-color: #f9d03c;
+    border: 5px solid #fff;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: uppercase;
     display: flex;
     border-radius: 40px;
     align-items: center;
@@ -254,8 +272,6 @@ body {
   .examples_page {
     background-color: #00b4ce;
     position: relative;
-    padding-left: 10px;
-    padding-right: 10px;
   }
 
   .slider {
@@ -349,8 +365,6 @@ body {
 /********************/
   .contact_page_wrapper {
     display: flex;
-    padding-left: 10px;
-    padding-right: 10px;
   }
 
   .footer_img {
@@ -441,88 +455,6 @@ body {
     clip: rect(1px, 1px, 1px, 1px)
   }
 
-  /* .slider__arrows {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
-  
-  .slider__arrow {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100px;
-    background: rgba(0, 67, 252, 0.466);
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 40px;
-    cursor: pointer;
-  }
-  
-  .slider__arrow:hover {
-    background: #ffe60010;;
-  }
-  
-  .slider__arrow_next {
-    right: 0;
-  }
-  
-  .slider__dots {
-    position: absolute;
-    bottom: 20px;
-    left: 50px;
-    right: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .slider__dot {
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    background: #000;
-    margin-right: 5px;
-    cursor: pointer
-  }
-  
-  .slider__dot_active {
-    background: #fff;
-  }
-  
-  .slider__dot:hover {
-    background: #fff;
-  }
-
-  .slider {
-    position: relative;
-    width: 30%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .slider__items {
-    width: 100%;
-  }
-  
-  .slider__item {
-    display: none;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .examples_img {
-    width: 100%;
-    object-fit: cover;
-  }
-  
-  .slider__item_active {
-    display: block;
-  } */
   
 /*******************************************/
 /****************Узкие десктопы*************/
@@ -574,7 +506,12 @@ body {
   /********************/
   /* Четвертая страница */
   /********************/
-  .order_button_phone {
+  /* .order_button_phone {
+    font-size: 4vh;
+    min-height: 70px;
+  } */
+
+  .order_button_mail {
     font-size: 4vh;
     min-height: 70px;
   }
@@ -771,6 +708,18 @@ body {
     font-style: oblique;
     color: black;
     width: 50%;
+    display: flex;
+  }
+
+  .order_button_mail {
+    margin-bottom: 40px;
+    font-size: 5vh;
+    line-height: 9px;
+    min-height: 100px;
+    font-style: oblique;
+    color: black;
+    width: 50%;
+    display: none;
   }
   
   .price__arrow {
@@ -1025,7 +974,20 @@ body {
     color: black;
     width: 50%;
     z-index: 50;
+    display: flex;
   }
+
+  .order_button_mail {
+    font-size: 3.5vh;
+    min-height: 50px;
+    font-style: oblique;
+    color: black;
+    width: 50%;
+    z-index: 50;
+    display: none;
+  }
+
+
   
   .price__arrow {
     position: absolute;
