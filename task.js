@@ -35,13 +35,12 @@ function dotClick() {
 }
 
 sliderDots.forEach( element =>
-    element.onclick = () => {
-        dotClick();
-});
+    element.addEventListener("click" , dotClick)
+);
 
 
 rightArrow.forEach( element =>
-    element.onclick = () => {
+    element.addEventListener("click", function() {
         nowActiveImg(sliderImages);
         sliderImages[nowActiveImgNumber].classList.remove('slider__item_active');
         sliderDots[nowActiveDot].classList.remove('slider__dot_active');
@@ -54,11 +53,11 @@ rightArrow.forEach( element =>
         }
         sliderImages[nowActiveImgNumber].classList.add('slider__item_active');
         sliderDots[nowActiveDot].classList.add('slider__dot_active');
-});
-
+    })
+);
 
 leftArrow.forEach( element =>
-    element.onclick = () => {
+    element.addEventListener("click", function() {
         nowActiveImg(sliderImages);
         sliderImages[nowActiveImgNumber].classList.remove('slider__item_active');
         sliderDots[nowActiveDot].classList.remove('slider__dot_active');
@@ -71,7 +70,8 @@ leftArrow.forEach( element =>
         }
         sliderImages[nowActiveImgNumber].classList.add('slider__item_active');
         sliderDots[nowActiveDot].classList.add('slider__dot_active');
-});
+    })
+);
 
 
 const priceLeftArrow = Array.from(document.getElementsByClassName('price__arrow_prev'));
@@ -90,7 +90,7 @@ function nowPriceActiveImg(input) {
 }
 
 priceRightArrow.forEach( element =>
-    element.onclick = () => {
+    element.addEventListener("click", function() {
         nowActiveImg(priceCard);
         priceCard[nowActivePriceNumber].classList.remove('price_card_active');
         if (nowActivePriceNumber === (priceCard.length - 1)) {
@@ -99,11 +99,12 @@ priceRightArrow.forEach( element =>
             nowActivePriceNumber = nowActivePriceNumber + 1;
         }
         priceCard[nowActivePriceNumber].classList.add('price_card_active');
-});
+    })
+);
 
 
 priceLeftArrow.forEach( element =>
-    element.onclick = () => {
+    element.addEventListener("click", function() {
         nowActiveImg(priceCard);
         priceCard[nowActivePriceNumber].classList.remove('price_card_active');
         if (nowActivePriceNumber === 0) {
@@ -112,7 +113,8 @@ priceLeftArrow.forEach( element =>
             nowActivePriceNumber = nowActivePriceNumber - 1;
         }
         priceCard[nowActivePriceNumber].classList.add('price_card_active');
-});
+    })
+);
 
 let talk = Array.from(document.getElementsByClassName('talk'));
 
