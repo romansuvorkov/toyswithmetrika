@@ -85,6 +85,8 @@ body {
     width: 100%;
     text-align: center;
     font-size: 5vh;
+    display: block;
+    padding-right: 10px;
   }
   
 /********************/
@@ -135,8 +137,6 @@ body {
     justify-content: space-around;
     margin-left: auto;
     margin-right: auto;
-    /* padding-left: 10px;
-    padding-right: 10px; */
   }
 
 /********************/
@@ -235,8 +235,9 @@ body {
     font-size: 5vh;
     line-height: 9px;
     min-height: 100px;
-    font-style: oblique;    ;
+    font-style: oblique;
     color: black;
+    width: 30vh;
   }
 
   .order_button_mail {
@@ -254,8 +255,9 @@ body {
     font-size: 5vh;
     line-height: 9px;
     min-height: 100px;
-    font-style: oblique;    ;
+    font-style: oblique;
     color: black;
+    width: 30vh;
   }
 
   .price__arrows {
@@ -292,13 +294,6 @@ body {
     width: 25%;
     margin: 50px;
   }
-
-  /* .slider__item:hover {
-      border: 5px solid #B0CBC4;
-      background-color: #F2EBD8;
-      border-top-left-radius: 100% 20px;
-      border-bottom-right-radius: 100% 30px;
-  } */
 
   .slider__arrows {
     position: absolute;
@@ -865,7 +860,7 @@ body {
   .header_contact {
     width: 30%;
     top: 10vh;
-    right: 4vh;
+    right: 5vh;
   }
   
   h1 {
