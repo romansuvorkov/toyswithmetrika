@@ -130,28 +130,15 @@ let talkReflection = setInterval(reflection, 2000, talkpicture);
 const revealPrice = Array.from(document.getElementsByClassName('price_card_wrapper'));
 const revealExample = Array.from(document.getElementsByClassName('slider'));
 
-function checkPlaceOnScreen(input) {
-    let elementBottom = input.getBoundingClientRect().bottom;
-    let elementTop = input.getBoundingClientRect().top;
-    let viewportHeight = window.innerHeight;
-    let middle = elementBottom - ((elementBottom - elementTop) / 2);
-    if (middle < viewportHeight) {
-        console.log('Сработал код в цене middle');
-    }
-
-}
-
-// document.addEventListener('scroll', () => checkPlaceOnScreen(revealPrice[0]));
-// document.addEventListener('scroll', () => checkPlaceOnScreen(revealExample[0]));
-
-
 document.addEventListener('scroll', function() {
     let elementBottom = revealPrice[0].getBoundingClientRect().bottom;
     let elementTop = revealPrice[0].getBoundingClientRect().top;
     let viewportHeight = window.innerHeight;
     let middle = elementBottom - ((elementBottom - elementTop) / 2);
     if (middle < viewportHeight) {
-        ym(52097337, 'reachGoal', 'scrollPrice'); return true;
+        // ym(52097337, 'reachGoal', 'scrollPrice'); return true;
+        yaCounter52097337.reachGoal("scrollPrice");
+
     }
 });
 
@@ -161,21 +148,7 @@ document.addEventListener('scroll', function() {
     let viewportHeight = window.innerHeight;
     let middle = elementBottom - ((elementBottom - elementTop) / 2);
     if (middle < viewportHeight) {
-        ym(52097337, 'reachGoal', 'scrollExample'); return true;
+        // ym(52097337, 'reachGoal', 'scrollExample'); return true;
+        yaCounter52097337.reachGoal("scrollExample");
     }
 });
-
-// function () {
-    // revealBlocks.forEach(e => {
-    //     let elementBottom = e.getBoundingClientRect().bottom;
-    //     console.log(elementBottom);
-    //     let viewportHeight = window.innerHeight;
-    //     console.log(viewportHeight);
-    //     if (elementBottom < window.innerHeight) {
-    //         e.classList.add('reveal_active');
-//     //     }
-//     });   
-// });
-
-
-
