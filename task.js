@@ -136,11 +136,7 @@ document.addEventListener('scroll', function() {
     let viewportHeight = window.innerHeight;
     let middle = elementBottom - ((elementBottom - elementTop) / 2);
     if (middle < viewportHeight) {
-        ym(52097337, 'reachGoal', 'ymone');
-        // return true;
-        //Вариант 1
-        // yaCounter52097337.reachGoal("scrollPrice");
-        // return true;
+        ym(52097337, 'reachGoal', 'scrollPrice');
     }
 });
 
@@ -150,9 +146,6 @@ document.addEventListener('scroll', function() {
     let viewportHeight = window.innerHeight;
     let middle = elementBottom - ((elementBottom - elementTop) / 2);
     if (middle < viewportHeight) {
-        //Вариант 2
-        // ym(52097337, 'reachGoal', 'scrollExample'); return true;
-        yaCounter52097337.reachGoal("yctwo");
-        // return true;
+        ym(52097337, 'reachGoal', 'scrollExample'); 
     }
 });
