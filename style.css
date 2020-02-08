@@ -110,7 +110,6 @@ body {
     font-size: 3vh;
     text-align: center;
     color: #00b4ce;
-    text-shadow: 1px 1px 2px rgb(0, 0, 0);
   }
 
   .advantage_card span {
@@ -206,7 +205,6 @@ body {
   }
 
   .price_card_img_wrapper {
-    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.637);
     text-align: center;
     font-size: 5vh;
   }
@@ -352,7 +350,6 @@ body {
 
   .examples_img {
     width: 100%;
-    box-shadow: 20px 10px 10px rgb(0, 0, 0);
   }
 
 /********************/
@@ -868,6 +865,12 @@ body {
   /********************/
   /* Первая страница */
   /********************/
+  
+  header {
+    background-image: url("img/banner-wave-phone.png");
+    padding-bottom: 15px;
+    }
+
   .header_banner {
     margin-top: 30px;
     width: 100%;
@@ -879,16 +882,16 @@ body {
 
   .header_contact {
     width: 30%;
-    top: 10vh;
-    right: 5vh;
+    top: 8vh;
+    right: 2vh;
   }
   
   h1 {
-    font-size: 5vh;
+    font-size: 4vh;
   }
 
   header span {
-    font-size: 3vh;
+    font-size: 2vh;
   }
   
   /********************/
