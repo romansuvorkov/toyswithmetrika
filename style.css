@@ -398,11 +398,12 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 30px;
+    margin-left: 10vh;
   }
   
   .socials_link {
-    width: 12vh;
-    height: 12vh;
+    width: 150px;
+    height: 150px;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -423,24 +424,20 @@ body {
   
   
   .socials_link_twitter {
-    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/004-twitter.svg");
+    background-image: url("img/tw400.jpg");
   }
   
-  .socials_link_pinterest {
-    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/001-pinterest.svg");
+  .socials_link_ok {
+    background-image: url("img/ok400.jpg");
   
   }
   
-  .socials_link_facebook {
-    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/002-facebook-logo.svg");
+  .socials_link_vk {
+    background-image: url("img/vk400.jpg");
   }
       
   .socials_link_instagram {
-    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/005-instagram.svg");
-  }
-  
-  .socials_link_tumblr {
-    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/003-tumblr.svg");
+    background-image: url("img/inst400.jpg");
   }
   
   .social_link_text {
@@ -540,8 +537,12 @@ body {
   }
 
   .socials_link {
-    width: 12vh;
-    height: 12vh;
+    width: 100px;
+    height: 100px;
+  }
+
+  .socials {
+    margin-left: 5vh;
   }
   
   .socials_item {
@@ -553,24 +554,20 @@ body {
   }
   
   .socials_link_twitter {
-    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/004-twitter.svg");
+    background-image: url("img/tw400.jpg");
   }
   
-  .socials_link_pinterest {
-    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/001-pinterest.svg");
+  .socials_link_ok {
+    background-image: url("img/ok400.jpg");
   
   }
   
-  .socials_link_facebook {
-    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/002-facebook-logo.svg");
+  .socials_link_vk {
+    background-image: url("img/vk400.jpg");
   }
       
   .socials_link_instagram {
-    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/005-instagram.svg");
-  }
-  
-  .socials_link_tumblr {
-    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/003-tumblr.svg");
+    background-image: url("img/inst400.jpg");
   }
 
 }
@@ -831,14 +828,37 @@ body {
   /* Шестая страница */
   /********************/
   
-  .socials_link {
-    width: 8vh;
-    height: 8vh;
-  }
-  
   .footer_contact_wrapper {
     font-size: 5vh;
     margin-top: 30px;
+    margin-left: 30px;
+  }
+
+  .socials_link {
+    width: 50px;
+    height: 50px;
+  }
+
+  .socials {
+    margin-left: 1vh;
+    margin-bottom: 0;
+  }
+
+  .socials_link_twitter {
+    background-image: url("img/tw200.jpg");
+  }
+  
+  .socials_link_ok {
+    background-image: url("img/ok200.jpg");
+  
+  }
+  
+  .socials_link_vk {
+    background-image: url("img/vk200.jpg");
+  }
+      
+  .socials_link_instagram {
+    background-image: url("img/inst200.jpg");
   }
 
   
@@ -908,12 +928,7 @@ body {
   
   .instructions_card_wrapper {
     flex-wrap: wrap;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
     font-size: 3vh;
-    text-align: center;
-    color: #ffffff;
   }
   
   .instructions_card {
@@ -1054,17 +1069,48 @@ body {
   /********************/
   
   .socials_link {
-    width: 4vh;
-    height: 4vh;
+    width: 30px;
+    height: 30px;
+  }
+
+  .socials {
+    margin-left: 5px;
+    margin-bottom: 0;
+    margin-top: 10px;
   }
   
+  .socials_item:first-child {
+    margin-left: 10px;
+}
+  .socials_item {
+    margin-right: 10px;
+  }
+
   .footer_contact_wrapper {
     font-size: 3vh;
     margin-top: 10px;
+    margin-left: 10px;
   }
 
   .footer_img_wrapper {
     width: 60%;
+}
+
+.socials_link_twitter {
+  background-image: url("img/tw100.jpg");
+}
+
+.socials_link_ok {
+  background-image: url("img/ok100.jpg");
+
+}
+
+.socials_link_vk {
+  background-image: url("img/vk100.jpg");
+}
+    
+.socials_link_instagram {
+  background-image: url("img/inst100.jpg");
 }
 
   
