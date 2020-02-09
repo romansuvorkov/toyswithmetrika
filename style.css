@@ -231,7 +231,7 @@ body {
     justify-content: center;
     position: relative;
     font-size: 5vh;
-    line-height: 9px;
+    line-height: 100px;
     min-height: 100px;
     font-style: oblique;
     color: black;
@@ -254,7 +254,7 @@ body {
     justify-content: center;
     position: relative;
     font-size: 5vh;
-    line-height: 9px;
+    line-height: 100px;
     min-height: 100px;
     font-style: oblique;
     color: black;
@@ -390,7 +390,12 @@ body {
     color: inherit;
     display: block;
     width: 100%;
+    background-image: url("img/messengers.png");
+    background-repeat: no-repeat;
+    background-position: 80% 50%;
+    background-size: contain;
   }
+
   .socials {
     display: flex;
     list-style-type: none;
@@ -695,23 +700,23 @@ body {
   .order_button_phone {
     margin-bottom: 40px;
     font-size: 5vh;
-    line-height: 9px;
-    min-height: 100px;
-    font-style: oblique;
-    color: black;
-    width: 50%;
-    display: flex;
+    line-height: 70px;
+    min-height: 70px;
+    width: 75%;
+    display: none;
   }
 
   .order_button_mail {
     margin-bottom: 40px;
     font-size: 5vh;
-    line-height: 9px;
-    min-height: 100px;
+    line-height: 70px;
+    min-height: 70px;
     font-style: oblique;
     color: black;
-    width: 50%;
-    display: none;
+    width: 60%;
+    display: block;
+    z-index: 50;
+    text-align: center;
   }
   
   .price__arrow {
@@ -753,7 +758,7 @@ body {
     position: absolute;
     top: 50px;
     bottom: 55px;
-    width: 4vh;
+    width: 100px;
     color: #f9d03c;
     display: flex;
     justify-content: center;
@@ -763,9 +768,13 @@ body {
   }
   
   .slider__arrow_next {
-    right: 0;
+    right: -50px;
   }
-  
+
+  .slider__arrow_prev {
+    left: -50px;
+  }
+
   .slider__dots {
     position: absolute;
     bottom: 20px;
@@ -829,9 +838,14 @@ body {
   /********************/
   
   .footer_contact_wrapper {
-    font-size: 5vh;
+    font-size: 4vh;
     margin-top: 30px;
     margin-left: 30px;
+    width: 50%;
+  }
+
+  .footer_tel_link{
+    background-position: 100% 50%;
   }
 
   .socials_link {
@@ -993,11 +1007,11 @@ body {
   }
 
   .order_button_phone {
+    margin-top: 20px;
     font-size: 3.5vh;
     min-height: 50px;
-    font-style: oblique;
-    color: black;
-    width: 100px;
+    line-height: 50px;
+    width: 75%;
     z-index: 50;
     display: flex;
   }
@@ -1005,8 +1019,6 @@ body {
   .order_button_mail {
     font-size: 3.5vh;
     min-height: 50px;
-    font-style: oblique;
-    color: black;
     width: 50%;
     z-index: 50;
     display: none;
@@ -1105,28 +1117,33 @@ body {
     font-size: 3vh;
     margin-top: 10px;
     margin-left: 10px;
+    width: 70%;
+  }
+
+  .footer_tel_link{
+      background-position: 100% 50%;
   }
 
   .footer_img_wrapper {
-    width: 60%;
-}
+      width: 60%;
+  }
 
-.socials_link_twitter {
-  background-image: url("img/tw100.jpg");
-}
+  .socials_link_twitter {
+    background-image: url("img/tw100.jpg");
+  }
 
-.socials_link_ok {
-  background-image: url("img/ok100.jpg");
+  .socials_link_ok {
+    background-image: url("img/ok100.jpg");
 
-}
+  }
 
-.socials_link_vk {
-  background-image: url("img/vk100.jpg");
-}
-    
-.socials_link_instagram {
-  background-image: url("img/inst100.jpg");
-}
+  .socials_link_vk {
+    background-image: url("img/vk100.jpg");
+  }
+      
+  .socials_link_instagram {
+    background-image: url("img/inst100.jpg");
+  }
 
   
  

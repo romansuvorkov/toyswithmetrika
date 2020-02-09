@@ -129,23 +129,31 @@ let talkReflection = setInterval(reflection, 2000, talkpicture);
 
 const revealPrice = Array.from(document.getElementsByClassName('price_card_wrapper'));
 const revealExample = Array.from(document.getElementsByClassName('slider'));
-
-document.addEventListener('scroll', function() {
+function scrollPrice() {
     let elementBottom = revealPrice[0].getBoundingClientRect().bottom;
     let elementTop = revealPrice[0].getBoundingClientRect().top;
     let viewportHeight = window.innerHeight;
     let middle = elementBottom - ((elementBottom - elementTop) / 2);
     if (middle < viewportHeight) {
         ym(52097337, 'reachGoal', 'scrollPrice');
+        document.removeEventListener('scroll', scrollPrice);
     }
-});
+}
 
-document.addEventListener('scroll', function() {
+function scrollExample() {
     let elementBottom = revealExample[0].getBoundingClientRect().bottom;
     let elementTop = revealExample[0].getBoundingClientRect().top;
     let viewportHeight = window.innerHeight;
     let middle = elementBottom - ((elementBottom - elementTop) / 2);
     if (middle < viewportHeight) {
-        ym(52097337, 'reachGoal', 'scrollExample'); 
+        ym(52097337, 'reachGoal', 'scrollExample');
+        document.removeEventListener('scroll', scrollExample);
     }
-});
+}
+
+
+document.addEventListener('scroll', scrollPrice);
+
+document.addEventListener('scroll', scrollExample);
+
+
