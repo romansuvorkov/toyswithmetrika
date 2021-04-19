@@ -927,7 +927,7 @@ body {
   
   .advantage_card {
     width: 45%;
-    font-size: 2.5vh;
+    font-size: 2vh;
     font-weight: 700;
     margin: 0;
     margin-top: 30px;
@@ -958,7 +958,7 @@ body {
   
   .instructions_card_wrapper {
     flex-wrap: wrap;
-    font-size: 3vh;
+    font-size: 2vh;
   }
   
   .instructions_card {
